@@ -1,0 +1,15 @@
+# Strings functions/methods
+# len(),find(),in, count(), split(),replace(),isdigit(),upper(),lower(),capitalize(),.join()
+s="Hi, my name is Tim."
+print(len(s))
+print(s.find("i"))
+print(s.count(" "))
+print(s.lower())
+print(s.upper())
+print(s.capitalize())
+print("i" in s)
+s1=s.replace(",","|")
+print(s1)
+s2=s.split()
+print(s2)
+print(" + ".join(s2))

@@ -27,3 +27,6 @@ print(lst)
 
 lst={j:i for i in range(1,11) for j in range(5)}
 print(lst)
+
+x,y=[1,2]
+print(x,y)

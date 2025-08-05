@@ -25,8 +25,22 @@ num=input("Enter a numerator: ")
 den=input("Enter a denominator: ")
 try:
     int(num)
-except:
+except Exception as e:
     print("The numerator is not a number.")
+
+try:
+    int(den)
+except ValueError as e:
+    print("The denominator is not a number.")
+    
+try:
+    res=int(num)/int(den)
+    print(f"The result of this division is {res}")
+except ZeroDivisionError as e:
+    print("You cannot divide by 0.")
     print("This division cannot be performed.")
+except Exception as e:
+        print("This division cannot be performed.")
 finally:
     print("Goodbye!")
+    
